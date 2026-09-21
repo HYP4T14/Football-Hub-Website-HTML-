@@ -50,6 +50,48 @@
         <section id="contact">
             <fieldset>
                 <legend><h2>Contact</h2></legend>
+                <form action="https://httpbin.org/post" method="post">
+                    <p>
+                        <label for="name">Name :</label>
+                        <input type="text" name="name" id="name" placeholder="Input Your Name" autocomplete="on" required autofocus>
+                    </p>
+                    <p>
+                        <label for="email">Email :</label>
+                        <input type="email" name="email" id="email" placeholder="Input Your Email" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="subject">Subject :</label>
+                        <input type="text" name="subject" id="subject" placeholder="Write The Subject" required>
+                    </p>
+                    <p>
+                        <label for="category">Category :</label>
+                        <select name="category" id="category" required>
+                            <option value="">--Select Here--</option>
+                            <option value="suggestion">Suggestion</option>
+                            <option value="criticism">Criticism</option>
+                            <option value="review">Review</option>
+                            <option value="question">Question</option>
+                        </select>
+                    </p>
+                    <p>
+                        <fieldset>
+                            <legend><h3>Preferred Contact</h3></legend>
+                            <p>
+                                <input type="radio" id="gmail" name="preferred" value="gmail">
+                                <label for="gmail">Email</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="whatsapp" name="preferred" value="whatsapp">
+                                <label for="whatsapp">WhatsApp</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="another" name="preferred" value="another">
+                                <label for="another">Another (Social Media)</label>
+                            </p>
+                        </fieldset>
+                    </p>
+                    <button type="submit">Submit</button>
+                </form>
             </fieldset>
         </section>
     </main>
